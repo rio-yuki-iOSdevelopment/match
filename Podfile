@@ -17,6 +17,7 @@ target 'match' do
   end
 
   pod "Koloda"
+  pod 'IBAnimatable'
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'

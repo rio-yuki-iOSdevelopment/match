@@ -474,6 +474,7 @@ PODS:
     - gRPC-Core/Interface (= 1.28.2)
   - gRPC-Core/Interface (1.28.2)
   - GTMSessionFetcher/Core (1.6.1)
+  - IBAnimatable (6.1.0)
   - Koloda (5.0.1):
     - pop (~> 1.0)
   - leveldb-library (1.22.1)
@@ -490,6 +491,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
+  - IBAnimatable
   - Koloda
 
 SPEC REPOS:
@@ -510,6 +512,7 @@ SPEC REPOS:
     - "gRPC-C++"
     - gRPC-Core
     - GTMSessionFetcher
+    - IBAnimatable
     - Koloda
     - leveldb-library
     - nanopb
@@ -533,12 +536,13 @@ SPEC CHECKSUMS:
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5
   GTMSessionFetcher: 36689134877faeb055b27dfa4ccc9ceaa42e029e
+  IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 3bae23192df398df1c37055feba9a61d2050d1f8
+PODFILE CHECKSUM: 662de052097744d172e04ef4859ee848ff27249e
 
 COCOAPODS: 1.10.1
