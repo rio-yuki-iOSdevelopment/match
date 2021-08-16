@@ -1,6 +1,0 @@
-framework module Pods_matchTests {
-  umbrella header "Pods-matchTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

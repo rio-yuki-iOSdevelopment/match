@@ -111,7 +111,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="fEN-Df-56D">
             <objects>
-                <viewController storyboardIdentifier="SignUpViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v81-Zg-3cJ" customClass="SignUpViewController" customModule="LineChatSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v81-Zg-3cJ" customClass="SignUpViewController" customModule="match" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7i2-rh-Pxd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,9 @@
                                 <state key="normal" title="プロフィール画像">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedProfileImageButton" destination="v81-Zg-3cJ" eventType="touchUpInside" id="apF-oa-sZf"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dcR-x5-yMx">
                                 <rect key="frame" x="57" y="274" width="300" height="250"/>
@@ -197,11 +200,17 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="tappedregisterButton" destination="v81-Zg-3cJ" eventType="touchUpInside" id="Pyw-f8-USK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bj-uy-dq7">
                                 <rect key="frame" x="120.5" y="644" width="173" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="既にアカウントをお持ちの方"/>
+                                <connections>
+                                    <action selector="tappedalreadyHaveAccountButton" destination="v81-Zg-3cJ" eventType="touchUpInside" id="7Qk-tx-6S2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lr5-QL-dtk"/>
@@ -218,6 +227,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MIK-rn-pqn"/>
+                    <connections>
+                        <outlet property="alreadyHaveAccountButton" destination="8Bj-uy-dq7" id="ZSg-UF-nbe"/>
+                        <outlet property="emailTextField" destination="Tnn-kq-K5s" id="H7S-tc-mjy"/>
+                        <outlet property="passwordTextField" destination="8cU-iW-0ai" id="qI5-F9-Tra"/>
+                        <outlet property="profileImageButton" destination="vvc-gh-27x" id="UZn-by-WvD"/>
+                        <outlet property="registerButton" destination="cXW-gC-fBK" id="6zQ-0v-nh1"/>
+                        <outlet property="userNameTextField" destination="Qck-9N-tdG" id="qiM-cQ-9JB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58B-fd-HzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
