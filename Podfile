@@ -18,5 +18,6 @@ target 'match' do
 
   pod "Koloda"
   pod 'IBAnimatable'
+  pod 'Eureka'
 
 end

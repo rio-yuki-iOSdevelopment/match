@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		285F665E26C153A600C04879 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F665D26C153A600C04879 /* EditProfileViewController.swift */; };
+		285F666326C155A100C04879 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285F666226C155A100C04879 /* ProfileViewController.swift */; };
 		728EE29D877003020556745E /* Pods_match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC730BAF19FF245C523B1DCD /* Pods_match.framework */; };
 		820B3CB4A7FBE998353E4A72 /* Pods_match_matchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410DBA791CC9840C14EFB77 /* Pods_match_matchUITests.framework */; };
 		8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634ED26BC126C005AB4E9 /* manatsu.jpg */; };
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		1410DBA791CC9840C14EFB77 /* Pods_match_matchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_match_matchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1986161700A6F6134ECC8BDF /* Pods-matchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchTests.release.xcconfig"; path = "Target Support Files/Pods-matchTests/Pods-matchTests.release.xcconfig"; sourceTree = "<group>"; };
+		285F665D26C153A600C04879 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		285F666226C155A100C04879 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5D8AEC603636BE071264EFB5 /* Pods-match-matchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.debug.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B824D60762A9BDB73586185 /* Pods-match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.debug.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.debug.xcconfig"; sourceTree = "<group>"; };
 		851E132F5A9CCC1A1E4FF423 /* Pods-match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.release.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 				8D517C7526BAC7FD00E76F59 /* ViewController.swift */,
 				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
 				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
+				285F666226C155A100C04879 /* ProfileViewController.swift */,
+				285F665D26C153A600C04879 /* EditProfileViewController.swift */,
 				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
 				8D517C7F26BAC80200E76F59 /* Info.plist */,
 				8D3634E926BC0F83005AB4E9 /* images */,
@@ -444,6 +450,8 @@
 			files = (
 				8D517C7626BAC7FD00E76F59 /* ViewController.swift in Sources */,
 				8D517C7226BAC7FD00E76F59 /* AppDelegate.swift in Sources */,
+				285F666326C155A100C04879 /* ProfileViewController.swift in Sources */,
+				285F665E26C153A600C04879 /* EditProfileViewController.swift in Sources */,
 				8D517C7426BAC7FD00E76F59 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

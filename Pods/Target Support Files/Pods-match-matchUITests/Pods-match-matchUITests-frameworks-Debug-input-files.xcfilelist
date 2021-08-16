@@ -1,4 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework
 ${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework
 ${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework
 ${BUILT_PRODUCTS_DIR}/pop/pop.framework

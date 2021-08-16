@@ -1,24 +1,28 @@
 PODS:
+  - Eureka (5.3.3)
   - IBAnimatable (6.1.0)
   - Koloda (5.0.1):
     - pop (~> 1.0)
   - pop (1.0.12)
 
 DEPENDENCIES:
+  - Eureka
   - IBAnimatable
   - Koloda
 
 SPEC REPOS:
   trunk:
+    - Eureka
     - IBAnimatable
     - Koloda
     - pop
 
 SPEC CHECKSUMS:
+  Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: 82fb90217b1f2ae6c9c5c672a480933b7729aa50
+PODFILE CHECKSUM: c19862b100a100faa958c61b9da0b67f65b3bf39
 
 COCOAPODS: 1.10.1
