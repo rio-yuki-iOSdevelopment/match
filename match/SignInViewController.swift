@@ -41,8 +41,11 @@ class SignInViewController: UIViewController {
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let rootViewController = storyboard.instantiateViewController(withIdentifier: "RootTabBarController")
             UIApplication.shared.keyWindow?.rootViewController = rootViewController
-            
-            self.dismiss(animated: true, completion: nil)
+            //           ログイン状態の保持の３行のコード
+            let ud = UserDefaults.standard
+            ud.set(true, forKey: "isLogin")
+            ud.synchronize()
+//            self.dismiss(animated: true, completion: nil)
         }
     }
     
