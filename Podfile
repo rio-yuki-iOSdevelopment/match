@@ -23,6 +23,8 @@ target 'match' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Eureka'
+  pod 'Nuke', '~> 9.0'
+  pod 'PKHUD', '~> 5.0'
 
   
 end
