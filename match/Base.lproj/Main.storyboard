@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="-171.42857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat List View Controller-->
         <scene sceneID="Uyw-tu-wVg">
             <objects>
-                <viewController id="U4d-mE-VLD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U4d-mE-VLD" customClass="ChatListViewController" customModule="match" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C4e-S1-5aB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,12 +82,25 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="887"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="93" id="SYO-O6-eK1">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="93"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SYO-O6-eK1" id="A50-AZ-niM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IMg-bL-b3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="4J1-5G-tmH"/>
+                    <connections>
+                        <outlet property="chatListTableView" destination="3Uu-X2-lQF" id="2vv-Kd-H7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sV7-WY-ydw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +240,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="tKr-8T-5k5">
             <objects>
-                <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Laf-gt-QzT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Laf-gt-QzT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" alpha="0.90000000000000002" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9AR-RN-ZZE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -325,17 +338,6 @@
             <point key="canvasLocation" x="995.65217391304361" y="1200.6696428571429"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="7rl-cK-iOd">
-            <size key="intrinsicContentSize" width="48" height="41"/>
-        </designable>
-        <designable name="vfe-Ye-YIX">
-            <size key="intrinsicContentSize" width="57" height="30"/>
-        </designable>
-        <designable name="zYQ-7e-5Kr">
-            <size key="intrinsicContentSize" width="123" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <image name="infinity" catalog="system" width="128" height="62"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
