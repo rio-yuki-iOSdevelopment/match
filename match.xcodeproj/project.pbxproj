@@ -11,6 +11,10 @@
 		28A7164526D26C6600094295 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7164426D26C6600094295 /* EditProfileViewController.swift */; };
 		728EE29D877003020556745E /* Pods_match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC730BAF19FF245C523B1DCD /* Pods_match.framework */; };
 		820B3CB4A7FBE998353E4A72 /* Pods_match_matchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410DBA791CC9840C14EFB77 /* Pods_match_matchUITests.framework */; };
+		8D19C63B26DE5BB00047775C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C63A26DE5BB00047775C /* Message.swift */; };
+		8D19C64026DE5BCC0047775C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C63F26DE5BCC0047775C /* User.swift */; };
+		8D19C64526DE5BE90047775C /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C64426DE5BE90047775C /* ChatRoom.swift */; };
+		8D19C64A26DE5C1A0047775C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C64926DE5C1A0047775C /* ChatListViewController.swift */; };
 		8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634ED26BC126C005AB4E9 /* manatsu.jpg */; };
 		8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634EE26BC126D005AB4E9 /* kuro.jpg */; };
 		8D3634F626BC1276005AB4E9 /* nanase.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634F426BC1276005AB4E9 /* nanase.jpg */; };
@@ -58,6 +62,10 @@
 		5D8AEC603636BE071264EFB5 /* Pods-match-matchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.debug.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B824D60762A9BDB73586185 /* Pods-match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.debug.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.debug.xcconfig"; sourceTree = "<group>"; };
 		851E132F5A9CCC1A1E4FF423 /* Pods-match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.release.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.release.xcconfig"; sourceTree = "<group>"; };
+		8D19C63A26DE5BB00047775C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8D19C63F26DE5BCC0047775C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D19C64426DE5BE90047775C /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		8D19C64926DE5C1A0047775C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		8D3634ED26BC126C005AB4E9 /* manatsu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manatsu.jpg; sourceTree = "<group>"; };
 		8D3634EE26BC126D005AB4E9 /* kuro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kuro.jpg; sourceTree = "<group>"; };
 		8D3634F426BC1276005AB4E9 /* nanase.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nanase.jpg; sourceTree = "<group>"; };
@@ -189,6 +197,10 @@
 				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
 				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
 				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
+				8D19C63A26DE5BB00047775C /* Message.swift */,
+				8D19C63F26DE5BCC0047775C /* User.swift */,
+				8D19C64426DE5BE90047775C /* ChatRoom.swift */,
+				8D19C64926DE5C1A0047775C /* ChatListViewController.swift */,
 				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
 				8D517C7F26BAC80200E76F59 /* Info.plist */,
 				8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */,
@@ -466,8 +478,12 @@
 				8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */,
 				8D517C7626BAC7FD00E76F59 /* ViewController.swift in Sources */,
 				8D517C7226BAC7FD00E76F59 /* AppDelegate.swift in Sources */,
+				8D19C64A26DE5C1A0047775C /* ChatListViewController.swift in Sources */,
 				8D517C7426BAC7FD00E76F59 /* SceneDelegate.swift in Sources */,
+				8D19C64026DE5BCC0047775C /* User.swift in Sources */,
+				8D19C63B26DE5BB00047775C /* Message.swift in Sources */,
 				8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */,
+				8D19C64526DE5BE90047775C /* ChatRoom.swift in Sources */,
 				28A7164526D26C6600094295 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
