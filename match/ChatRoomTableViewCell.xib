@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="111" id="eln-99-kq0" customClass="ChatRoomTableViewCell" customModule="LineChatSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eln-99-kq0" id="9fm-8s-5EQ">
+                <rect key="frame" x="0.0" y="0.0" width="461" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miria" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-sr-gKb">
+                        <rect key="frame" x="15" y="25" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Kaf-8R-R1t"/>
+                            <constraint firstAttribute="width" constant="60" id="pRY-2g-ww1"/>
+                        </constraints>
+                    </imageView>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージがここに入ります" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlO-L7-8IM">
+                        <rect key="frame" x="85" y="25" width="250" height="61"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="c00-UI-HuG"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6p-BK-xMK">
+                        <rect key="frame" x="340" y="65" width="43" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="hE1-2N-26N"/>
+                            <constraint firstAttribute="width" constant="43" id="jaI-Nl-A5u"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqy-FP-xgS">
+                        <rect key="frame" x="216" y="25" width="225" height="61"/>
+                        <color key="backgroundColor" red="0.44705882349999998" green="0.87843137250000003" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="225" id="vJO-Hd-Rzb"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzv-jo-g7C">
+                        <rect key="frame" x="172" y="64" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1kd-sr-gKb" firstAttribute="leading" secondItem="9fm-8s-5EQ" secondAttribute="leading" constant="15" id="2CM-0l-s7x"/>
+                    <constraint firstItem="dlO-L7-8IM" firstAttribute="top" secondItem="9fm-8s-5EQ" secondAttribute="top" constant="25" id="Ebc-Vm-eES"/>
+                    <constraint firstItem="1kd-sr-gKb" firstAttribute="top" secondItem="9fm-8s-5EQ" secondAttribute="top" constant="25" id="HqI-bo-qJr"/>
+                    <constraint firstAttribute="bottom" secondItem="Z6p-BK-xMK" secondAttribute="bottom" constant="25" id="Ma0-wz-q1L"/>
+                    <constraint firstItem="Xqy-FP-xgS" firstAttribute="top" secondItem="9fm-8s-5EQ" secondAttribute="top" constant="25" id="d21-rk-6sP"/>
+                    <constraint firstItem="Z6p-BK-xMK" firstAttribute="leading" secondItem="dlO-L7-8IM" secondAttribute="trailing" constant="5" id="idw-KN-q9t"/>
+                    <constraint firstAttribute="trailing" secondItem="Xqy-FP-xgS" secondAttribute="trailing" constant="20" id="jVX-4N-I3k"/>
+                    <constraint firstItem="dlO-L7-8IM" firstAttribute="leading" secondItem="1kd-sr-gKb" secondAttribute="trailing" constant="10" id="mPH-Cj-8Qq"/>
+                    <constraint firstAttribute="bottom" secondItem="Xqy-FP-xgS" secondAttribute="bottom" constant="25" id="mST-YX-IBS"/>
+                    <constraint firstAttribute="bottom" secondItem="dlO-L7-8IM" secondAttribute="bottom" constant="25" id="nOR-bn-r74"/>
+                    <constraint firstItem="Xqy-FP-xgS" firstAttribute="leading" secondItem="dzv-jo-g7C" secondAttribute="trailing" constant="8" id="ohb-Os-mpf"/>
+                    <constraint firstAttribute="bottom" secondItem="dzv-jo-g7C" secondAttribute="bottom" constant="30" id="uNa-U5-yjo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="eIV-00-L7T"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="messageTextViewWidthConstraint" destination="c00-UI-HuG" id="ejV-pp-469"/>
+                <outlet property="myDateLabel" destination="dzv-jo-g7C" id="rqX-C6-V6P"/>
+                <outlet property="myMessageTextView" destination="Xqy-FP-xgS" id="DGE-T2-cLP"/>
+                <outlet property="myMessageTextViewWidthConstraint" destination="vJO-Hd-Rzb" id="lAm-OZ-VQh"/>
+                <outlet property="partnerDateLabel" destination="Z6p-BK-xMK" id="PUr-3e-H66"/>
+                <outlet property="partnerMessageTextView" destination="dlO-L7-8IM" id="CY1-yr-mn8"/>
+                <outlet property="userImageView" destination="1kd-sr-gKb" id="kZn-o8-k31"/>
+            </connections>
+            <point key="canvasLocation" x="152.89855072463769" y="163.72767857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="miria" width="102" height="123.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
