@@ -222,11 +222,22 @@
                                     <segue destination="cHv-7q-P3e" kind="push" id="rFx-24-Y7G"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poa-es-Zdk">
+                                <rect key="frame" x="43" y="395" width="331" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="End-SZ-pme"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="XmN-IC-GcU"/>
+                    <connections>
+                        <outlet property="userImageView" destination="U0h-RO-zdp" id="M0L-UM-bDN"/>
+                        <outlet property="userNameLabel" destination="poa-es-Zdk" id="S6t-gh-R5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63r-MQ-DIF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,6 +250,16 @@
                     <view key="view" contentMode="scaleToFill" id="zYK-eM-CJb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l43-Vu-hO4">
+                                <rect key="frame" x="224" y="736" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="saveUserInfo" destination="cHv-7q-P3e" eventType="touchUpInside" id="lnv-Fv-0bB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="4c1-g0-O4x"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -267,7 +288,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="tKr-8T-5k5">
             <objects>
-                <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="Laf-gt-QzT" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Laf-gt-QzT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" alpha="0.90000000000000002" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9AR-RN-ZZE">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
