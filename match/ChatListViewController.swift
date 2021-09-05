@@ -27,7 +27,18 @@ class ChatListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setupViews()
+        confirmLoggedInUser()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fetchLoginUserInfo()
+        fetchChatroomsInfoFromFirestore()
+        
     }
 
     func fetchChatroomsInfoFromFirestore() {
@@ -67,11 +78,14 @@ class ChatListViewController: UIViewController {
         chatroom.documentId = documentChange.document.documentID
 
 
+        print(chatroom.documentId)
         guard let uid = Auth.auth().currentUser?.uid else {return}
+        print(chatroom.members)
         let isContain = chatroom.members.contains(uid)
+        print(chatroom.members.contains(uid))
 
         //        含まれてない時はここでリターン
-        if !isContain {return}
+//        if !isContain {return}
 
         chatroom.members.forEach { (memberUid) in
             if memberUid != uid {
@@ -155,6 +169,15 @@ class ChatListViewController: UIViewController {
 
 
     }
+    
+    private func confirmLoggedInUser() {
+        if Auth.auth().currentUser?.uid == nil{
+            
+            pushLoginViewController()
+        }
+    }
+    
+    
 
     private func pushLoginViewController(){
 
