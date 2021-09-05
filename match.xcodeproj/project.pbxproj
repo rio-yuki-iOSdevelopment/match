@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		728EE29D877003020556745E /* Pods_match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC730BAF19FF245C523B1DCD /* Pods_match.framework */; };
 		820B3CB4A7FBE998353E4A72 /* Pods_match_matchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410DBA791CC9840C14EFB77 /* Pods_match_matchUITests.framework */; };
+		8D11C61526E3517B00811CCE /* ChatInputAccessory.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D11C61426E3517B00811CCE /* ChatInputAccessory.xib */; };
+		8D11C61A26E351EF00811CCE /* ChatInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11C61926E351EF00811CCE /* ChatInputAccessory.swift */; };
+		8D11C61F26E352AF00811CCE /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D11C61E26E352AF00811CCE /* ChatRoomViewController.swift */; };
+		8D11C62726E3532300811CCE /* soushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D11C62626E3532300811CCE /* soushin.png */; };
 		8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634ED26BC126C005AB4E9 /* manatsu.jpg */; };
 		8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634EE26BC126D005AB4E9 /* kuro.jpg */; };
 		8D3634F626BC1276005AB4E9 /* nanase.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634F426BC1276005AB4E9 /* nanase.jpg */; };
@@ -31,6 +35,8 @@
 		8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD6ECB26C9226600326F2B /* SignIn.storyboard */; };
 		8DC8B0DE26DDE251004B70CA /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8B0DD26DDE251004B70CA /* Message.swift */; };
 		8DC8B0E326DDE285004B70CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC8B0E226DDE285004B70CA /* User.swift */; };
+		8DE0A87126E49CF2001CE1FF /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE0A86F26E49CF2001CE1FF /* ChatRoomTableViewCell.swift */; };
+		8DE0A87226E49CF2001CE1FF /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DE0A87026E49CF2001CE1FF /* ChatRoomTableViewCell.xib */; };
 		FEA11CA4C2648CD663DCF1DF /* Pods_matchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,10 @@
 		5D8AEC603636BE071264EFB5 /* Pods-match-matchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.debug.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B824D60762A9BDB73586185 /* Pods-match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.debug.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.debug.xcconfig"; sourceTree = "<group>"; };
 		851E132F5A9CCC1A1E4FF423 /* Pods-match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.release.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.release.xcconfig"; sourceTree = "<group>"; };
+		8D11C61426E3517B00811CCE /* ChatInputAccessory.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessory.xib; sourceTree = "<group>"; };
+		8D11C61926E351EF00811CCE /* ChatInputAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessory.swift; sourceTree = "<group>"; };
+		8D11C61E26E352AF00811CCE /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		8D11C62626E3532300811CCE /* soushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soushin.png; sourceTree = "<group>"; };
 		8D3634ED26BC126C005AB4E9 /* manatsu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manatsu.jpg; sourceTree = "<group>"; };
 		8D3634EE26BC126D005AB4E9 /* kuro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kuro.jpg; sourceTree = "<group>"; };
 		8D3634F426BC1276005AB4E9 /* nanase.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nanase.jpg; sourceTree = "<group>"; };
@@ -85,6 +95,8 @@
 		8DBD6ECB26C9226600326F2B /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		8DC8B0DD26DDE251004B70CA /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8DC8B0E226DDE285004B70CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8DE0A86F26E49CF2001CE1FF /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		8DE0A87026E49CF2001CE1FF /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
 		90CA077A8D5CCB5BA413207E /* Pods-matchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchTests.debug.xcconfig"; path = "Target Support Files/Pods-matchTests/Pods-matchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_matchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C263D425C5597F0A1F4C55 /* Pods-match-matchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.release.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +163,7 @@
 				8D3634F526BC1276005AB4E9 /* nanami.jpeg */,
 				8D3634F426BC1276005AB4E9 /* nanase.jpg */,
 				8D3634FB26BC127B005AB4E9 /* maiyan.png */,
+				8D11C62626E3532300811CCE /* soushin.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -189,10 +202,15 @@
 				8DBD6EC426C9222300326F2B /* SignInViewController.swift */,
 				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
 				8D6A858A26D279FB002A5CF1 /* ChatListViewController.swift */,
+				8D11C61926E351EF00811CCE /* ChatInputAccessory.swift */,
+				8D11C61E26E352AF00811CCE /* ChatRoomViewController.swift */,
+				8DE0A86F26E49CF2001CE1FF /* ChatRoomTableViewCell.swift */,
 				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
 				8DBD6ECB26C9226600326F2B /* SignIn.storyboard */,
-				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
+				8D11C61426E3517B00811CCE /* ChatInputAccessory.xib */,
 				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
+				8DE0A87026E49CF2001CE1FF /* ChatRoomTableViewCell.xib */,
+				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
 				8D517C7F26BAC80200E76F59 /* Info.plist */,
 				8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */,
 				8D3634E926BC0F83005AB4E9 /* images */,
@@ -330,6 +348,7 @@
 				8D517C7B26BAC80100E76F59 /* Assets.xcassets in Resources */,
 				8D3634F726BC1276005AB4E9 /* nanami.jpeg in Resources */,
 				8D517C7926BAC7FD00E76F59 /* Main.storyboard in Resources */,
+				8D11C62726E3532300811CCE /* soushin.png in Resources */,
 				8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */,
 				8D3634FC26BC127B005AB4E9 /* maiyan.png in Resources */,
 				8DBD6E9C26C91DE800326F2B /* GoogleService-Info.plist in Resources */,
@@ -337,6 +356,8 @@
 				8D36350926BC13C8005AB4E9 /* yoda.jpg in Resources */,
 				8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */,
 				8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */,
+				8DE0A87226E49CF2001CE1FF /* ChatRoomTableViewCell.xib in Resources */,
+				8D11C61526E3517B00811CCE /* ChatInputAccessory.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D6A858626D277F3002A5CF1 /* ChatRoom.swift in Sources */,
+				8D11C61A26E351EF00811CCE /* ChatInputAccessory.swift in Sources */,
 				8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */,
 				8D517C7626BAC7FD00E76F59 /* ViewController.swift in Sources */,
 				8D517C7226BAC7FD00E76F59 /* AppDelegate.swift in Sources */,
@@ -473,6 +495,8 @@
 				8DC8B0DE26DDE251004B70CA /* Message.swift in Sources */,
 				8D517C7426BAC7FD00E76F59 /* SceneDelegate.swift in Sources */,
 				8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */,
+				8DE0A87126E49CF2001CE1FF /* ChatRoomTableViewCell.swift in Sources */,
+				8D11C61F26E352AF00811CCE /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

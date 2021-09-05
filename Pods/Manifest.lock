@@ -344,6 +344,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - Eureka (5.3.3)
   - Firebase/Analytics (8.6.0):
     - Firebase/Core
   - Firebase/Auth (8.6.0):
@@ -483,21 +484,27 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - Nuke (9.5.0)
+  - PKHUD (5.3.0)
   - pop (1.0.12)
   - PromisesObjC (2.0.0)
 
 DEPENDENCIES:
+  - Eureka
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
   - IBAnimatable
   - Koloda
+  - Nuke (~> 9.0)
+  - PKHUD (~> 5.0)
 
 SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - Eureka
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -516,12 +523,15 @@ SPEC REPOS:
     - Koloda
     - leveldb-library
     - nanopb
+    - Nuke
+    - PKHUD
     - pop
     - PromisesObjC
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  Eureka: e6d720290c56bb23333ad1a0e020b2a98a0e9a43
   Firebase: 21ac9f28b09a8bdfc005f34c984fca84e7e8786d
   FirebaseAnalytics: 8f32ae54ad42754f503354782575c4ddfc1425c3
   FirebaseAuth: 223adeeb2262b417532e89bf06a960e3a0a1e9e4
@@ -540,9 +550,11 @@ SPEC CHECKSUMS:
   Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 68ae1cdd0bdcf6dd09b006b486f897a4e6206e03
+PODFILE CHECKSUM: 3561a9e26fa40c4a11aae1c1af1e5afa693227d0
 
 COCOAPODS: 1.10.1
