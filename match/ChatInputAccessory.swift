@@ -67,12 +67,12 @@ class ChatInputAccessory: UIView {
        }
     
     required init?(coder: NSCoder) {
-           fatalError("init(coder:) has not been implemented")
-       }
+               fatalError("init(coder:) has not been implemented")
+           }
     
     
     private func nibInit() {
-        let nib = UINib(nibName: "ChatInputAccessory", bundle: nil)
+        let nib = UINib(nibName: "ChatInputAccessoryView", bundle: nil)
         guard let view = nib.instantiate(withOwner: self, options: nil).first as? UIView else { return }
         
         //        viewのフレームを決める

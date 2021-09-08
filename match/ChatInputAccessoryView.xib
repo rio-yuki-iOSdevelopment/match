@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatInputAccessory" customModule="match" customModuleProvider="target">
+            <connections>
+                <outlet property="chatTextView" destination="9dG-zV-hCA" id="5fJ-c6-uca"/>
+                <outlet property="sendButton" destination="p9U-aE-8ZA" id="GwJ-Pz-S3u"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ChatInputAccessory" id="xNl-oB-WdG">
+            <rect key="frame" x="0.0" y="0.0" width="635" height="137"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="ここにメッセージを入力してください" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9dG-zV-hCA">
+                    <rect key="frame" x="10" y="10" width="565" height="83"/>
+                    <color key="backgroundColor" white="0.82200699200000005" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9U-aE-8ZA">
+                    <rect key="frame" x="585" y="36.5" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="XHS-0P-egn"/>
+                        <constraint firstAttribute="width" constant="40" id="fmE-x0-3tF"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="soushin.png"/>
+                    <connections>
+                        <action selector="tappedSendButton:" destination="-1" eventType="touchUpInside" id="Xjg-95-fNw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rKY-89-0tw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9dG-zV-hCA" firstAttribute="leading" secondItem="rKY-89-0tw" secondAttribute="leading" constant="10" id="BFv-BM-B4T"/>
+                <constraint firstItem="p9U-aE-8ZA" firstAttribute="leading" secondItem="9dG-zV-hCA" secondAttribute="trailing" constant="10" id="aWP-nb-7i5"/>
+                <constraint firstItem="rKY-89-0tw" firstAttribute="trailing" secondItem="p9U-aE-8ZA" secondAttribute="trailing" constant="10" id="gBW-VE-ACE"/>
+                <constraint firstItem="p9U-aE-8ZA" firstAttribute="centerY" secondItem="9dG-zV-hCA" secondAttribute="centerY" id="lyn-iu-cl7"/>
+                <constraint firstItem="rKY-89-0tw" firstAttribute="bottom" secondItem="9dG-zV-hCA" secondAttribute="bottom" constant="10" id="oWx-eu-jWQ"/>
+                <constraint firstItem="9dG-zV-hCA" firstAttribute="top" secondItem="xNl-oB-WdG" secondAttribute="top" constant="10" id="tqK-em-OGF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="369" y="79"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="soushin.png" width="30" height="30"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

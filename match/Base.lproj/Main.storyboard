@@ -134,17 +134,17 @@
                     <navigationItem key="navigationItem" id="4J1-5G-tmH"/>
                     <connections>
                         <outlet property="chatListTableView" destination="3Uu-X2-lQF" id="ZTV-wh-pMf"/>
-                        <segue destination="Kue-V0-YkY" kind="show" id="SYY-wY-tAr"/>
+                        <segue destination="Kue-V0-YkY" kind="show" identifier="toRoom" id="SYY-wY-tAr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sV7-WY-ydw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1908.6956521739132" y="521.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat Room View Controller-->
         <scene sceneID="4N6-bD-4yQ">
             <objects>
-                <viewController id="Kue-V0-YkY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatRoomViewController" id="Kue-V0-YkY" customClass="ChatRoomViewController" customModule="match" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4NU-Ji-5o6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="44" id="Yy2-Lw-1Vi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="44" id="Yy2-Lw-1Vi">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yy2-Lw-1Vi" id="mZS-Jh-9GX">
@@ -169,6 +169,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="vku-ML-9Gc"/>
+                    <connections>
+                        <outlet property="chatRoomTableView" destination="ENs-6g-rob" id="cgs-cp-dwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cx-ZT-q6B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
