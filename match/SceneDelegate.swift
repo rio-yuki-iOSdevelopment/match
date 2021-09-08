@@ -17,14 +17,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        let window = UIWindow(windowScene: scene as! UIWindowScene)
-        self.window = window
-        window.makeKeyAndVisible()
+        let ud = UserDefaults.standard
+        let isLogin = ud.bool(forKey: "isLogin")
         
-        let storybaord = UIStoryboard(name: "SignIn", bundle: nil)
-        let signInViewController = storybaord.instantiateViewController(identifier: "SignInViewController")
-        window.rootViewController = signInViewController
+        print(isLogin)
         
+        if isLogin == true {
+            let window = UIWindow(windowScene: scene as! UIWindowScene)
+            self.window = window
+            window.makeKeyAndVisible()
+            
+            let storybaord = UIStoryboard(name: "Main", bundle: nil)
+            let rootTabBarController = storybaord.instantiateViewController(identifier: "RootTabBarController")
+    //        ナビゲーションコントローラーがあるとき必要
+            let nav = UINavigationController(rootViewController: rootTabBarController)
+            
+            window.rootViewController = nav
+        } else {
+            let window = UIWindow(windowScene: scene as! UIWindowScene)
+            self.window = window
+            window.makeKeyAndVisible()
+            
+            let storybaord = UIStoryboard(name: "SignIn", bundle: nil)
+            let rootTabBarController = storybaord.instantiateViewController(identifier: "SignInViewController")
+    //        ナビゲーションコントローラーがあるとき必要
+            let nav = UINavigationController(rootViewController: rootTabBarController)
+            
+            window.rootViewController = nav
+            
+        }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
     

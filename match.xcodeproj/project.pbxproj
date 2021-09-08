@@ -11,12 +11,17 @@
 		28A7164526D26C6600094295 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A7164426D26C6600094295 /* EditProfileViewController.swift */; };
 		728EE29D877003020556745E /* Pods_match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC730BAF19FF245C523B1DCD /* Pods_match.framework */; };
 		820B3CB4A7FBE998353E4A72 /* Pods_match_matchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410DBA791CC9840C14EFB77 /* Pods_match_matchUITests.framework */; };
+		8D19C63B26DE5BB00047775C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C63A26DE5BB00047775C /* Message.swift */; };
+		8D19C64026DE5BCC0047775C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C63F26DE5BCC0047775C /* User.swift */; };
+		8D19C64526DE5BE90047775C /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C64426DE5BE90047775C /* ChatRoom.swift */; };
+		8D19C64A26DE5C1A0047775C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D19C64926DE5C1A0047775C /* ChatListViewController.swift */; };
+		8D2AE68A26E79AA80097AF67 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AE68926E79AA80097AF67 /* ChatInputAccessoryView.xib */; };
+		8D2AE68F26E79AE70097AF67 /* soushin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AE68E26E79AE70097AF67 /* soushin.png */; };
 		8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634ED26BC126C005AB4E9 /* manatsu.jpg */; };
 		8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634EE26BC126D005AB4E9 /* kuro.jpg */; };
 		8D3634F626BC1276005AB4E9 /* nanase.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634F426BC1276005AB4E9 /* nanase.jpg */; };
 		8D3634F726BC1276005AB4E9 /* nanami.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634F526BC1276005AB4E9 /* nanami.jpeg */; };
 		8D3634FC26BC127B005AB4E9 /* maiyan.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D3634FB26BC127B005AB4E9 /* maiyan.png */; };
-		8D36350426BC13C1005AB4E9 /* miria2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D36350326BC13C1005AB4E9 /* miria2.jpg */; };
 		8D36350926BC13C8005AB4E9 /* yoda.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D36350826BC13C8005AB4E9 /* yoda.jpg */; };
 		8D517C7226BAC7FD00E76F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C7126BAC7FD00E76F59 /* AppDelegate.swift */; };
 		8D517C7426BAC7FD00E76F59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C7326BAC7FD00E76F59 /* SceneDelegate.swift */; };
@@ -26,10 +31,15 @@
 		8D517C7E26BAC80100E76F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */; };
 		8D517C8926BAC80200E76F59 /* matchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C8826BAC80200E76F59 /* matchTests.swift */; };
 		8D517C9426BAC80200E76F59 /* matchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C9326BAC80200E76F59 /* matchUITests.swift */; };
+		8D51858226E8BCC300839A5E /* miria 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D51858126E8BCC300839A5E /* miria 2.jpg */; };
+		8D55104E26DFBAA200652879 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */; };
+		8D55104F26DFBAA200652879 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */; };
+		8D55105426DFBB4500652879 /* ChatInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55105326DFBB4500652879 /* ChatInputAccessory.swift */; };
 		8DBD6E9C26C91DE800326F2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */; };
 		8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC426C9222300326F2B /* SignInViewController.swift */; };
 		8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC926C9224400326F2B /* SignUpViewController.swift */; };
 		8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD6ECB26C9226600326F2B /* SignIn.storyboard */; };
+		8DF6B49D26E795610088571D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6B49C26E795610088571D /* ChatRoomViewController.swift */; };
 		FEA11CA4C2648CD663DCF1DF /* Pods_matchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,12 +68,17 @@
 		5D8AEC603636BE071264EFB5 /* Pods-match-matchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.debug.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B824D60762A9BDB73586185 /* Pods-match.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.debug.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.debug.xcconfig"; sourceTree = "<group>"; };
 		851E132F5A9CCC1A1E4FF423 /* Pods-match.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match.release.xcconfig"; path = "Target Support Files/Pods-match/Pods-match.release.xcconfig"; sourceTree = "<group>"; };
+		8D19C63A26DE5BB00047775C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8D19C63F26DE5BCC0047775C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8D19C64426DE5BE90047775C /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		8D19C64926DE5C1A0047775C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		8D2AE68926E79AA80097AF67 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
+		8D2AE68E26E79AE70097AF67 /* soushin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soushin.png; sourceTree = "<group>"; };
 		8D3634ED26BC126C005AB4E9 /* manatsu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = manatsu.jpg; sourceTree = "<group>"; };
 		8D3634EE26BC126D005AB4E9 /* kuro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kuro.jpg; sourceTree = "<group>"; };
 		8D3634F426BC1276005AB4E9 /* nanase.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nanase.jpg; sourceTree = "<group>"; };
 		8D3634F526BC1276005AB4E9 /* nanami.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nanami.jpeg; sourceTree = "<group>"; };
 		8D3634FB26BC127B005AB4E9 /* maiyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maiyan.png; sourceTree = "<group>"; };
-		8D36350326BC13C1005AB4E9 /* miria2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = miria2.jpg; sourceTree = "<group>"; };
 		8D36350826BC13C8005AB4E9 /* yoda.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yoda.jpg; sourceTree = "<group>"; };
 		8D517C6E26BAC7FD00E76F59 /* match.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = match.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D517C7126BAC7FD00E76F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +94,15 @@
 		8D517C8F26BAC80200E76F59 /* matchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D517C9326BAC80200E76F59 /* matchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchUITests.swift; sourceTree = "<group>"; };
 		8D517C9526BAC80200E76F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D51858126E8BCC300839A5E /* miria 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "miria 2.jpg"; path = "../../../match/match/images/miria 2.jpg"; sourceTree = "<group>"; };
+		8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		8D55105326DFBB4500652879 /* ChatInputAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessory.swift; sourceTree = "<group>"; };
 		8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBD6EC426C9222300326F2B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8DBD6EC926C9224400326F2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8DBD6ECB26C9226600326F2B /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		8DF6B49C26E795610088571D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		90CA077A8D5CCB5BA413207E /* Pods-matchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchTests.debug.xcconfig"; path = "Target Support Files/Pods-matchTests/Pods-matchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_matchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8C263D425C5597F0A1F4C55 /* Pods-match-matchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-match-matchUITests.release.xcconfig"; path = "Target Support Files/Pods-match-matchUITests/Pods-match-matchUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +160,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D1298C226E8BEEF00785550 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D19C63F26DE5BCC0047775C /* User.swift */,
+				8D19C64426DE5BE90047775C /* ChatRoom.swift */,
+				8D19C63A26DE5BB00047775C /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D1298C926E8BF0E00785550 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
+				8DBD6ECB26C9226600326F2B /* SignIn.storyboard */,
+				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8D1298D026E8BF2800785550 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8D55105326DFBB4500652879 /* ChatInputAccessory.swift */,
+				8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8D1298D726E8BF5500785550 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */,
+				8D2AE68926E79AA80097AF67 /* ChatInputAccessoryView.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		8D1298DE26E8BF6F00785550 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D517C7526BAC7FD00E76F59 /* ViewController.swift */,
+				8DBD6EC426C9222300326F2B /* SignInViewController.swift */,
+				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
+				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
+				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
+				8D19C64926DE5C1A0047775C /* ChatListViewController.swift */,
+				8DF6B49C26E795610088571D /* ChatRoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8D3634E926BC0F83005AB4E9 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +221,8 @@
 				8D3634F526BC1276005AB4E9 /* nanami.jpeg */,
 				8D3634F426BC1276005AB4E9 /* nanase.jpg */,
 				8D3634FB26BC127B005AB4E9 /* maiyan.png */,
-				8D36350326BC13C1005AB4E9 /* miria2.jpg */,
+				8D51858126E8BCC300839A5E /* miria 2.jpg */,
+				8D2AE68E26E79AE70097AF67 /* soushin.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -181,15 +254,12 @@
 			children = (
 				8D517C7126BAC7FD00E76F59 /* AppDelegate.swift */,
 				8D517C7326BAC7FD00E76F59 /* SceneDelegate.swift */,
-				8D517C7526BAC7FD00E76F59 /* ViewController.swift */,
-				8DBD6EC426C9222300326F2B /* SignInViewController.swift */,
-				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
-				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
-				8DBD6ECB26C9226600326F2B /* SignIn.storyboard */,
+				8D1298DE26E8BF6F00785550 /* Controllers */,
+				8D1298D726E8BF5500785550 /* xibs */,
+				8D1298C226E8BEEF00785550 /* Models */,
+				8D1298C926E8BF0E00785550 /* StoryBoards */,
+				8D1298D026E8BF2800785550 /* Cells */,
 				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
-				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
-				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
-				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
 				8D517C7F26BAC80200E76F59 /* Info.plist */,
 				8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */,
 				8D3634E926BC0F83005AB4E9 /* images */,
@@ -323,9 +393,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2AE68A26E79AA80097AF67 /* ChatInputAccessoryView.xib in Resources */,
 				8D517C7E26BAC80100E76F59 /* LaunchScreen.storyboard in Resources */,
 				8D517C7B26BAC80100E76F59 /* Assets.xcassets in Resources */,
 				8D3634F726BC1276005AB4E9 /* nanami.jpeg in Resources */,
+				8D55104F26DFBAA200652879 /* ChatRoomTableViewCell.xib in Resources */,
 				8D517C7926BAC7FD00E76F59 /* Main.storyboard in Resources */,
 				8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */,
 				8D3634FC26BC127B005AB4E9 /* maiyan.png in Resources */,
@@ -334,7 +406,8 @@
 				8D36350926BC13C8005AB4E9 /* yoda.jpg in Resources */,
 				8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */,
 				8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */,
-				8D36350426BC13C1005AB4E9 /* miria2.jpg in Resources */,
+				8D2AE68F26E79AE70097AF67 /* soushin.png in Resources */,
+				8D51858226E8BCC300839A5E /* miria 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,10 +537,17 @@
 			files = (
 				28A7164026D26C4C00094295 /* ProfileViewController.swift in Sources */,
 				8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */,
+				8D55105426DFBB4500652879 /* ChatInputAccessory.swift in Sources */,
 				8D517C7626BAC7FD00E76F59 /* ViewController.swift in Sources */,
 				8D517C7226BAC7FD00E76F59 /* AppDelegate.swift in Sources */,
+				8D19C64A26DE5C1A0047775C /* ChatListViewController.swift in Sources */,
 				8D517C7426BAC7FD00E76F59 /* SceneDelegate.swift in Sources */,
+				8DF6B49D26E795610088571D /* ChatRoomViewController.swift in Sources */,
+				8D19C64026DE5BCC0047775C /* User.swift in Sources */,
+				8D19C63B26DE5BB00047775C /* Message.swift in Sources */,
 				8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */,
+				8D19C64526DE5BE90047775C /* ChatRoom.swift in Sources */,
+				8D55104E26DFBAA200652879 /* ChatRoomTableViewCell.swift in Sources */,
 				28A7164526D26C6600094295 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

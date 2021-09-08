@@ -43,13 +43,13 @@ class ProfileViewController: UIViewController {
                 guard let data = snap?.data() else { return }
                    print(data)
                
-                let text = document.data()["text"] as! String
-                let title = document.data()["title"] as! String
+//                let text = document.data()["text"] as! String
+//                let title = document.data()["title"] as! String
 
-                print("text: \(text)")
-                print("title: \(title)"
+//                print("text: \(text)")
+//                print("title: \(title)"
 
-               )}
+//               )}
                }
                }
         
@@ -86,3 +86,4 @@ class ProfileViewController: UIViewController {
 //        }
 
 
+}

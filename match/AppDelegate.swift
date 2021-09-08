@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ud = UserDefaults.standard
         let isLogin = ud.bool(forKey: "isLogin")
         
+        print(isLogin)
+        
         if isLogin == true {
             //画面遷移
             self.window = UIWindow(frame: UIScreen.main.bounds)
