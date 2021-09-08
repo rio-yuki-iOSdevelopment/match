@@ -160,6 +160,58 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D1298C226E8BEEF00785550 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D19C63F26DE5BCC0047775C /* User.swift */,
+				8D19C64426DE5BE90047775C /* ChatRoom.swift */,
+				8D19C63A26DE5BB00047775C /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D1298C926E8BF0E00785550 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
+				8DBD6ECB26C9226600326F2B /* SignIn.storyboard */,
+				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8D1298D026E8BF2800785550 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8D55105326DFBB4500652879 /* ChatInputAccessory.swift */,
+				8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8D1298D726E8BF5500785550 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */,
+				8D2AE68926E79AA80097AF67 /* ChatInputAccessoryView.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		8D1298DE26E8BF6F00785550 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D517C7526BAC7FD00E76F59 /* ViewController.swift */,
+				8DBD6EC426C9222300326F2B /* SignInViewController.swift */,
+				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
+				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
+				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
+				8D19C64926DE5C1A0047775C /* ChatListViewController.swift */,
+				8DF6B49C26E795610088571D /* ChatRoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8D3634E926BC0F83005AB4E9 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,24 +254,12 @@
 			children = (
 				8D517C7126BAC7FD00E76F59 /* AppDelegate.swift */,
 				8D517C7326BAC7FD00E76F59 /* SceneDelegate.swift */,
-				8D517C7526BAC7FD00E76F59 /* ViewController.swift */,
-				8DBD6EC426C9222300326F2B /* SignInViewController.swift */,
-				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
-				8D517C7726BAC7FD00E76F59 /* Main.storyboard */,
-				8DBD6ECB26C9226600326F2B /* SignIn.storyboard */,
+				8D1298DE26E8BF6F00785550 /* Controllers */,
+				8D1298D726E8BF5500785550 /* xibs */,
+				8D1298C226E8BEEF00785550 /* Models */,
+				8D1298C926E8BF0E00785550 /* StoryBoards */,
+				8D1298D026E8BF2800785550 /* Cells */,
 				8D517C7A26BAC80100E76F59 /* Assets.xcassets */,
-				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
-				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
-				8D19C63A26DE5BB00047775C /* Message.swift */,
-				8D19C63F26DE5BCC0047775C /* User.swift */,
-				8D19C64426DE5BE90047775C /* ChatRoom.swift */,
-				8D19C64926DE5C1A0047775C /* ChatListViewController.swift */,
-				8DF6B49C26E795610088571D /* ChatRoomViewController.swift */,
-				8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */,
-				8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */,
-				8D55105326DFBB4500652879 /* ChatInputAccessory.swift */,
-				8D2AE68926E79AA80097AF67 /* ChatInputAccessoryView.xib */,
-				8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */,
 				8D517C7F26BAC80200E76F59 /* Info.plist */,
 				8DBD6E9B26C91DE800326F2B /* GoogleService-Info.plist */,
 				8D3634E926BC0F83005AB4E9 /* images */,
