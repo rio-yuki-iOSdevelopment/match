@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import Nuke
 
 class ChatListViewController: UIViewController {
 
@@ -85,7 +86,7 @@ class ChatListViewController: UIViewController {
         print(chatroom.members.contains(uid))
 
         //        含まれてない時はここでリターン
-//        if !isContain {return}
+        if !isContain {return}
 
         chatroom.members.forEach { (memberUid) in
             if memberUid != uid {
@@ -148,12 +149,7 @@ class ChatListViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         navigationItem.title = "トーク"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-
-//        let rightbarButton = UIBarButtonItem(title: "新規チャット", style: .plain, target: self, action: #selector (tappedNavRightBarButton))
-//        let logoutBarButton = UIBarButtonItem(title: "ログアウト", style: .plain, target: self, action: #selector(tappedLogoutButton))
-//        navigationItem.rightBarButtonItem = rightbarButton
         navigationItem.rightBarButtonItem?.tintColor = .white
-//        navigationItem.leftBarButtonItem = logoutBarButton
         navigationItem.leftBarButtonItem?.tintColor = .white
 
     }
@@ -206,6 +202,15 @@ class ChatListViewController: UIViewController {
             self.user = user
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let chatRoomViewController = segue.destination as! ChatRoomViewController
+        
+        let selectedIndex = chatListTableView.indexPathForSelectedRow!
+        
+        chatRoomViewController.user = user
+        chatRoomViewController.chatRoom = chatrooms[selectedIndex.row]
+    }
 
 
 }
@@ -234,14 +239,8 @@ extension  ChatListViewController :UITableViewDataSource,UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
-        //        ストーリボードをつなげる
-//        let storyboard = UIStoryboard.init(name: "ChatRoom", bundle: nil)
-//        let chatRoomViewController = storyboard.instantiateViewController(identifier: "ChatRoomViewController") as! ChatRoomViewController
-//        chatRoomViewController.user = user
-//        chatRoomViewController.chatRoom = chatrooms[indexPath.row]
-
-//                navigationController?.pushViewController(chatRoomViewController, animated: true)
+        
+        self.performSegue(withIdentifier: "toRoom", sender: nil)
     }
 
 
@@ -258,7 +257,7 @@ class ChatListTableViewCell:UITableViewCell{
                 partnerLabel.text = chatroom.partnerUser?.username
 
                 guard let url = URL(string: chatroom.partnerUser?.profileImageUrl ?? "") else { return }
-//                Nuke.loadImage(with: url, into: userImageView)
+                Nuke.loadImage(with: url, into: userImageView)
 
                 dateLabel.text = dateFormatterForDateLabel(date: chatroom.latestMessage?.createdAt.dateValue() ?? Date())
                 //                               latestMessageLabel.text = chatroom.latestMessage?.message
