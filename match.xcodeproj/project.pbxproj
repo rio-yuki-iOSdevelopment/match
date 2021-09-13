@@ -221,7 +221,10 @@
 				8D3634F526BC1276005AB4E9 /* nanami.jpeg */,
 				8D3634F426BC1276005AB4E9 /* nanase.jpg */,
 				8D3634FB26BC127B005AB4E9 /* maiyan.png */,
+
 				8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */,
+
+
 				8D2AE68E26E79AE70097AF67 /* soushin.png */,
 			);
 			path = images;
@@ -407,7 +410,10 @@
 				8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */,
 				8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */,
 				8D2AE68F26E79AE70097AF67 /* soushin.png in Resources */,
+
 				8DD66C2426EF6CD000F2A3B5 /* miria 2.jpg in Resources */,
+
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,8 @@ import Firebase
 
 class EditProfileViewController: FormViewController {
     
+    var userDefault = UserDefaults.standard
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,11 @@ class EditProfileViewController: FormViewController {
                 //  row.title = "自己紹介"
                 row.placeholder = "ヒップホップ,ジム"
             }.onChange{row in
+
 //                self.userDefault.setValue(row.value, forKey: "selfIntroduction")
+
+                self.userDefault.setValue(row.value, forKey: "hobby")
+
             }
             
             +++ Section("仕事")
@@ -59,12 +65,16 @@ class EditProfileViewController: FormViewController {
                         return
                     }
                     let db = Firestore.firestore()
-                    //        setData いけたけど既存データが消えたあああ
+                    //     既存データが消えたあああ
                     db.collection("users").document(user.uid).setData([
-                        "displayName": "",
-                        "selfIntroduction": "",
-                        "hobby": "",
-                        "work": "",
+                        "createData": "",
+                        "email": "",
+                        "profileImageUrl":"",
+                        "username":"",
+                        "displayName": (self.userDefault.string(forKey: "displayName"), forKey: "displayName"),
+                        "selfIntroduction": (self.userDefault.string(forKey: "selfIntroduction"), forKey: "selfIntroduction"),
+                        "hobby": (self.userDefault.string(forKey: "selfIntroduction"), forKey: "work"),
+                        "work": (self.userDefault.string(forKey: "work"), forKey: "work"),
                     ]) { error in
                         if let error = error {
                             // エラー処理
