@@ -31,7 +31,6 @@
 		8D517C7E26BAC80100E76F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D517C7C26BAC80100E76F59 /* LaunchScreen.storyboard */; };
 		8D517C8926BAC80200E76F59 /* matchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C8826BAC80200E76F59 /* matchTests.swift */; };
 		8D517C9426BAC80200E76F59 /* matchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D517C9326BAC80200E76F59 /* matchUITests.swift */; };
-		8D51858226E8BCC300839A5E /* miria 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8D51858126E8BCC300839A5E /* miria 2.jpg */; };
 		8D55104E26DFBAA200652879 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */; };
 		8D55104F26DFBAA200652879 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */; };
 		8D55105426DFBB4500652879 /* ChatInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55105326DFBB4500652879 /* ChatInputAccessory.swift */; };
@@ -39,6 +38,7 @@
 		8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC426C9222300326F2B /* SignInViewController.swift */; };
 		8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC926C9224400326F2B /* SignUpViewController.swift */; };
 		8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD6ECB26C9226600326F2B /* SignIn.storyboard */; };
+		8DD66C2426EF6CD000F2A3B5 /* miria 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */; };
 		8DF6B49D26E795610088571D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6B49C26E795610088571D /* ChatRoomViewController.swift */; };
 		FEA11CA4C2648CD663DCF1DF /* Pods_matchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */; };
 /* End PBXBuildFile section */
@@ -94,7 +94,6 @@
 		8D517C8F26BAC80200E76F59 /* matchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D517C9326BAC80200E76F59 /* matchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchUITests.swift; sourceTree = "<group>"; };
 		8D517C9526BAC80200E76F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D51858126E8BCC300839A5E /* miria 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "miria 2.jpg"; path = "../../../match/match/images/miria 2.jpg"; sourceTree = "<group>"; };
 		8D55104C26DFBAA200652879 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		8D55104D26DFBAA200652879 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
 		8D55105326DFBB4500652879 /* ChatInputAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessory.swift; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		8DBD6EC426C9222300326F2B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8DBD6EC926C9224400326F2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8DBD6ECB26C9226600326F2B /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "miria 2.jpg"; sourceTree = "<group>"; };
 		8DF6B49C26E795610088571D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		90CA077A8D5CCB5BA413207E /* Pods-matchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchTests.debug.xcconfig"; path = "Target Support Files/Pods-matchTests/Pods-matchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_matchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,7 +221,7 @@
 				8D3634F526BC1276005AB4E9 /* nanami.jpeg */,
 				8D3634F426BC1276005AB4E9 /* nanase.jpg */,
 				8D3634FB26BC127B005AB4E9 /* maiyan.png */,
-				8D51858126E8BCC300839A5E /* miria 2.jpg */,
+				8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */,
 				8D2AE68E26E79AE70097AF67 /* soushin.png */,
 			);
 			path = images;
@@ -407,7 +407,7 @@
 				8D3634F026BC126D005AB4E9 /* kuro.jpg in Resources */,
 				8D3634EF26BC126D005AB4E9 /* manatsu.jpg in Resources */,
 				8D2AE68F26E79AE70097AF67 /* soushin.png in Resources */,
-				8D51858226E8BCC300839A5E /* miria 2.jpg in Resources */,
+				8DD66C2426EF6CD000F2A3B5 /* miria 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

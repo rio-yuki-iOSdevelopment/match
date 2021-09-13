@@ -19,21 +19,21 @@ class EditProfileViewController: FormViewController {
                 row.title = "ニックネーム"
                 row.placeholder = "ニックネームを入力"
             }.onChange{row in
-                self.userDefault.setValue(row.value, forKey: "displayName")
+//                self.userDefault.setValue(row.value, forKey: "displayName")
             }
             +++ Section("自己紹介")
             <<< TextAreaRow("自己紹介"){ row in
                 //                row.title = "自己紹介"
                 row.placeholder = "こんにちは。"
             } .onChange{row in
-                self.userDefault.setValue(row.value, forKey: "selfIntroduction")
+//                self.userDefault.setValue(row.value, forKey: "selfIntroduction")
             }
             +++ Section("興味")
             <<< TextRow("興味"){ row in
                 //  row.title = "自己紹介"
                 row.placeholder = "ヒップホップ,ジム"
             }.onChange{row in
-                self.userDefault.setValue(row.value, forKey: "selfIntroduction")
+//                self.userDefault.setValue(row.value, forKey: "selfIntroduction")
             }
             
             +++ Section("仕事")
@@ -41,7 +41,7 @@ class EditProfileViewController: FormViewController {
                 //  row.title = "自己紹介"
                 row.placeholder = "仕事を追加"
             }.onChange{row in
-                self.userDefault.setValue(row.value, forKey: "work")
+//                self.userDefault.setValue(row.value, forKey: "work")
                 
             }
             
@@ -71,7 +71,7 @@ class EditProfileViewController: FormViewController {
                             print(error)
                         }
                     }
-                    self.userDefault.removeAll()
+//                    self.userDefault.removeAll()
                 }
             }
     }
