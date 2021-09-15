@@ -21,28 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let ud = UserDefaults.standard
         let isLogin = ud.bool(forKey: "isLogin")
         
-        print(isLogin)
         
-        if isLogin == true {
-            //画面遷移
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let rootViewController = storyboard.instantiateViewController(identifier: "RootTabBarController")
-            //代入
-            self.window?.rootViewController = rootViewController
-            self.window?.backgroundColor = UIColor.white
-            //映し出す
-            self.window?.makeKeyAndVisible()
-        } else {
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            let storyboard = UIStoryboard(name: "SignIn", bundle: Bundle.main)
-            let rootViewController = storyboard.instantiateViewController(identifier: "SignInViewController")
-            self.window?.rootViewController = rootViewController
-            self.window?.backgroundColor = UIColor.white
-            //映し出す
-            self.window?.makeKeyAndVisible()
-            
-        }
         
         return true
     }
