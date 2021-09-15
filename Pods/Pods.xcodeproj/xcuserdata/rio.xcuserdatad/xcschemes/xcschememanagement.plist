@@ -119,7 +119,7 @@
 		<key>Nuke.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>28</integer>
 		</dict>
 		<key>PKHUD-PKHUDResources.xcscheme_^#shared#^_</key>
 		<dict>
@@ -129,7 +129,7 @@
 		<key>PKHUD.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
+			<integer>27</integer>
 		</dict>
 		<key>Pods-match-matchUITests.xcscheme</key>
 		<dict>
