@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     private let cellId = "cellId"
     
     private var users = [User]()
+    private var myData : User!
     
     
     var images = ["miria2.jpg","maiyan.png","nanase.jpg","nanami.jpeg","manatsu.jpg","yoda.jpg","kuro.jpg"]
@@ -50,7 +51,9 @@ class ViewController: UIViewController {
                 
                 guard let uid = Auth.auth().currentUser?.uid else {return}
                 
+                
                 if uid == snapshot.documentID{
+                    self.myData = user
                     return
                     
                 }
@@ -119,6 +122,70 @@ extension ViewController: KolodaViewDelegate {
         print(index, "drag")
         return true
     }
+    
+    // フリックできる方向を指定する
+        func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+            return [.left, .right, .up]
+        }
+    
+//    フリックし終わったら呼ばれる
+    func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        
+        if direction.rawValue == "right"{
+            guard let likeUser = users[index] as? User else {return}
+            guard let likeUserUid = likeUser.uid as? String else {return}
+            guard let uid = Auth.auth().currentUser?.uid else {return}
+            
+            let docData = [
+                "email":likeUser.email,
+                "username":likeUser.username,
+                "createDate":Timestamp(),
+                "profileImageUrl": likeUser.profileImageUrl,
+                "userId":likeUserUid
+            ] as [String:Any]
+            
+            Firestore.firestore().collection("users").document(uid).collection("likeUsers").document(likeUserUid).setData(docData){ [self](err) in
+                if let err = err{
+                    print("ライクユーザーの保存に失敗しました", err)
+                    return
+                }
+                
+                print("ライクユーザーの保存に成功しました")
+                
+            }
+            
+            
+            
+        }else if direction.rawValue == "left"{
+            guard let likeUser = users[index] as? User else {return}
+            guard let likeUserUid = likeUser.uid as? String else {return}
+            guard let uid = Auth.auth().currentUser?.uid else {return}
+            
+            let docData = [
+                "email":likeUser.email,
+                "username":likeUser.username,
+                "createDate":Timestamp(),
+                "profileImageUrl": likeUser.profileImageUrl,
+                "userId":likeUserUid
+            ] as [String:Any]
+            
+            Firestore.firestore().collection("users").document(uid).collection("unlikeUsers").document(likeUserUid).setData(docData){ [self](err) in
+                if let err = err{
+                    print("ノンライクユーザーの保存に失敗しました", err)
+                    return
+                }
+                
+                print("ノンライクユーザーの保存に成功しました")
+                
+            }
+            
+        }else{
+            
+            
+        }
+        
+    }
+    
     
     
 }

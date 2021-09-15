@@ -110,7 +110,8 @@ class SignUpViewController: UIViewController {
                         "email":email,
                         "username":userName,
                         "createDate":Timestamp(),
-                        "profileImageUrl": profileImageUrl
+                        "profileImageUrl": profileImageUrl,
+                        "userId": uid
                     ] as [String:Any]
                     
                     //                データベースへの保存
