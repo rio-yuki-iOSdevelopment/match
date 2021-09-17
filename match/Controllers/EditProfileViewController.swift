@@ -14,8 +14,11 @@ class EditProfileViewController: FormViewController {
     var userDefault = UserDefaults.standard
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         form +++ Section("名前")
             <<< TextRow("ニックネーム"){ row in
                 row.title = "ニックネーム"
@@ -64,6 +67,8 @@ class EditProfileViewController: FormViewController {
                         // サインインしていない場合の処理をするなど
                         return
                     }
+//                    self.userUid = user.uid
+                    
                     let db = Firestore.firestore()
                     //     既存データが消えたあああ
                     db.collection("users").document(user.uid).setData([
@@ -85,4 +90,6 @@ class EditProfileViewController: FormViewController {
                 }
             }
     }
+    
+    
 }

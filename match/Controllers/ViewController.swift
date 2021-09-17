@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     }
     
     
+    
 }
 
 
@@ -124,11 +125,11 @@ extension ViewController: KolodaViewDelegate {
     }
     
     // フリックできる方向を指定する
-        func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
-            return [.left, .right, .up]
-        }
+    func koloda(_ koloda: KolodaView, allowedDirectionsForIndex index: Int) -> [SwipeResultDirection] {
+        return [.left, .right, .up]
+    }
     
-//    フリックし終わったら呼ばれる
+    //    フリックし終わったら呼ばれる
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         
         if direction.rawValue == "right"{
@@ -144,6 +145,7 @@ extension ViewController: KolodaViewDelegate {
                 "userId":likeUserUid
             ] as [String:Any]
             
+            
             Firestore.firestore().collection("users").document(uid).collection("likeUsers").document(likeUserUid).setData(docData){ [self](err) in
                 if let err = err{
                     print("ライクユーザーの保存に失敗しました", err)
@@ -154,6 +156,54 @@ extension ViewController: KolodaViewDelegate {
                 
             }
             
+            Firestore.firestore().collection("users").document(likeUserUid).collection("likeUsers").document(uid).getDocument { (snapshot, err) in
+                if let err = err{
+                    print("自分user情報の取得に失敗しました",err)
+                    return
+                }
+                
+                
+                if snapshot?.data() == nil{
+                    print("マッチしませんでした")
+                    return
+                }else{
+                    
+                    let alert: UIAlertController = UIAlertController(title: "マッチしました！！", message: "メッセージを送りましょう！", preferredStyle:  UIAlertController.Style.alert)
+                    let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+                            // ボタンが押された時の処理を書く（クロージャ実装）
+                            (action: UIAlertAction!) -> Void in
+                            print("OK")
+                        })
+
+                        // ③ UIAlertControllerにActionを追加
+                        alert.addAction(defaultAction)
+
+                        // ④ Alertを表示
+                    self.present(alert, animated: true, completion: nil)
+                    
+                    
+                    guard let uid = Auth.auth().currentUser?.uid else { return }
+                    let memebers = [uid, likeUserUid]
+                    
+                    let docData = [
+                        "memebers": memebers,
+                        "latestMessageId": "",
+                        "createdAt": Timestamp()
+                    ] as [String : Any]
+                    
+                    
+                    Firestore.firestore().collection("chatRooms").addDocument(data: docData) { (err) in
+                        if let err = err {
+                            print("ChatRoom情報の保存に失敗しました。\(err)")
+                            return
+                        }
+                        print("ChatRoom情報の保存に成功しました。")
+                        
+                        
+                    }
+                }
+                
+            }
             
             
         }else if direction.rawValue == "left"{
