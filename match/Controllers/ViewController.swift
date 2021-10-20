@@ -184,20 +184,23 @@ extension ViewController: KolodaViewDelegate {
                     
                     guard let uid = Auth.auth().currentUser?.uid else { return }
                     let memebers = [uid, likeUserUid]
+                    let memberNames = [self.myData.username,likeUser.username]
+                    let memberProfileImageUrl = [self.myData.profileImageUrl,likeUser.profileImageUrl]
                     
                     let docData = [
                         "memebers": memebers,
-                        "latestMessageId": "",
+                        "memeberNames": memberNames,
+                        "memebersProfileImages": memberProfileImageUrl,
                         "createdAt": Timestamp()
                     ] as [String : Any]
                     
                     
-                    Firestore.firestore().collection("chatRooms").addDocument(data: docData) { (err) in
+                    Firestore.firestore().collection("match").addDocument(data: docData) { (err) in
                         if let err = err {
-                            print("ChatRoom情報の保存に失敗しました。\(err)")
+                            print("match情報の保存に失敗しました。\(err)")
                             return
                         }
-                        print("ChatRoom情報の保存に成功しました。")
+                        print("match情報の保存に成功しました。")
                         
                         
                     }
