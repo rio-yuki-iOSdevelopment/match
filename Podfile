@@ -25,6 +25,7 @@ target 'match' do
   pod 'Eureka'
   pod 'Nuke', '~> 9.0'
   pod 'PKHUD', '~> 5.0'
+  pod 'Tabman', '~> 2.11'
 
   
 end
