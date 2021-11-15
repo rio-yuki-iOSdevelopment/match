@@ -40,6 +40,7 @@
 		8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC426C9222300326F2B /* SignInViewController.swift */; };
 		8DBD6ECA26C9224400326F2B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD6EC926C9224400326F2B /* SignUpViewController.swift */; };
 		8DBD6ECC26C9226600326F2B /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD6ECB26C9226600326F2B /* SignIn.storyboard */; };
+		8DCA406E27422C0A002D3B5F /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCA406D27422C0A002D3B5F /* PagingViewController.swift */; };
 		8DD66C2426EF6CD000F2A3B5 /* miria 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */; };
 		8DF6B49D26E795610088571D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6B49C26E795610088571D /* ChatRoomViewController.swift */; };
 		FEA11CA4C2648CD663DCF1DF /* Pods_matchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A8777A875F48C32356AA66 /* Pods_matchTests.framework */; };
@@ -105,6 +106,7 @@
 		8DBD6EC426C9222300326F2B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8DBD6EC926C9224400326F2B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8DBD6ECB26C9226600326F2B /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		8DCA406D27422C0A002D3B5F /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		8DD66C2326EF6CD000F2A3B5 /* miria 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "miria 2.jpg"; sourceTree = "<group>"; };
 		8DF6B49C26E795610088571D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		90CA077A8D5CCB5BA413207E /* Pods-matchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-matchTests.debug.xcconfig"; path = "Target Support Files/Pods-matchTests/Pods-matchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				8DBD6EC926C9224400326F2B /* SignUpViewController.swift */,
 				28A7163F26D26C4C00094295 /* ProfileViewController.swift */,
 				28A7164426D26C6600094295 /* EditProfileViewController.swift */,
+				8DCA406D27422C0A002D3B5F /* PagingViewController.swift */,
 				8DBAA12926F4BC7F00278008 /* UserListViewController.swift */,
 				8D19C64926DE5C1A0047775C /* ChatListViewController.swift */,
 				8DF6B49C26E795610088571D /* ChatRoomViewController.swift */,
@@ -541,6 +544,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCA406E27422C0A002D3B5F /* PagingViewController.swift in Sources */,
 				28A7164026D26C4C00094295 /* ProfileViewController.swift in Sources */,
 				8DBD6EC526C9222300326F2B /* SignInViewController.swift in Sources */,
 				8D55105426DFBB4500652879 /* ChatInputAccessory.swift in Sources */,

@@ -77,7 +77,7 @@ class UserListViewController: UIViewController {
                 print("user情報の取得に失敗しました",err)
                 return
             }
-                
+
             snapshots?.documents.forEach({ (snapshot) in
                 let dic = snapshot.data()
                 let match = Match.init(dic: dic)

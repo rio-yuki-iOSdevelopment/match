@@ -485,9 +485,12 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - Nuke (9.5.0)
+  - Pageboy (3.6.2)
   - PKHUD (5.3.0)
   - pop (1.0.12)
   - PromisesObjC (2.0.0)
+  - Tabman (2.11.1):
+    - Pageboy (~> 3.6.0)
 
 DEPENDENCIES:
   - Eureka
@@ -499,6 +502,7 @@ DEPENDENCIES:
   - Koloda
   - Nuke (~> 9.0)
   - PKHUD (~> 5.0)
+  - Tabman (~> 2.11)
 
 SPEC REPOS:
   trunk:
@@ -524,9 +528,11 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Nuke
+    - Pageboy
     - PKHUD
     - pop
     - PromisesObjC
+    - Tabman
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -551,10 +557,12 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   Nuke: 6f400a4ea957e09149ec335a3c6acdcc814d89e4
+  Pageboy: cf121b9dd48c63f3f281b2a9ec93d02e0f23879b
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
+  Tabman: 792ac76fd1ec95af175c93db880a3c47cabedc91
 
-PODFILE CHECKSUM: 277119671ab44ddcc951fd6250ff73f807de3b84
+PODFILE CHECKSUM: 5c80030e4334de13d7055199257db80e9129b57c
 
 COCOAPODS: 1.10.1
